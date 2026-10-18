@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .sg-card {
+    @apply bg-white dark:bg-[#142219] border border-[#e8e4dc] dark:border-[#1f3527] transition-all duration-300;
+  }
+
+  .sg-card-hover {
+    @apply hover:border-emerald-700/40 dark:hover:border-emerald-500/40 hover:shadow-lg dark:hover:shadow-emerald-950/40 transform hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .glass-card {
+    @apply bg-white/90 dark:bg-[#142219]/80 backdrop-blur-md border border-[#e8e4dc] dark:border-[#1f3527];
+  }
+
+  .glass-card-hover {
+    @apply hover:border-emerald-600/40 dark:hover:border-emerald-500/40 hover:shadow-xl dark:hover:shadow-emerald-950/40 transform hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .font-script {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+/* Custom Sweetgreen Theme Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1f3527;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #166534;
+}
