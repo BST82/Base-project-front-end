@@ -1,14 +1,12 @@
 {
-  "version": 2,
-  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api/:match*",
-      "destination": "http://45.195.129.134/api/:match*"
+      "source": "/api/:path*",
+      "destination": "http://45.195.129.134/api/:path*"
     },
     {
-      "source": "/uploads/:match*",
-      "destination": "http://45.195.129.134/uploads/:match*"
+      "source": "/uploads/:path*",
+      "destination": "http://45.195.129.134/uploads/:path*"
     },
     {
       "source": "/(.*)",
