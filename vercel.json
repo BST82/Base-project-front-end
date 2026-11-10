@@ -4,11 +4,11 @@
   "rewrites": [
     {
       "source": "/api/:match*",
-      "destination": "https://base-project-backedend.onrender.com/api/:match*"
+      "destination": "http://45.195.129.134/api/:match*"
     },
     {
       "source": "/uploads/:match*",
-      "destination": "https://base-project-backedend.onrender.com/uploads/:match*"
+      "destination": "http://45.195.129.134/uploads/:match*"
     },
     {
       "source": "/(.*)",
